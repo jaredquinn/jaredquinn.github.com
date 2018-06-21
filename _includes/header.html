@@ -1,0 +1,11 @@
+<nav class="container nav">
+  <div>
+  <div class="site-title"><a href="/">{{ site.title }}</a><br/><span class="sub-title">ops.code.iot.smarthome</span></div>
+	<ul>
+		{% for page in site.pages %}
+		<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+		{% endfor %}
+	</ul>
+  </div>
+  <div style="clear: both;"></div>
+</nav>

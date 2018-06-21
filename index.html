@@ -1,1 +1,18 @@
-<h1>Hello World</h1>
+---
+layout: default
+---
+
+{% for post in site.posts %}
+	<article>
+		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+    <div class="date-line">
+      <span class="month">{{ post.date | date: "%b" }}</span>
+      <span class="day">{{ post.date | date: "%-d" }}</span>
+      <span class="year">{{ post.date | date: "%Y" }}</span>
+    </div>
+
+		{{ post.content }}
+	</article>
+	<hr>
+{% endfor %}

@@ -1,1 +1,6 @@
-theme: jekyll-theme-slate
+# Site settings
+title: Jared Quinn
+
+# Build settings
+markdown: kramdown
+permalink: pretty
